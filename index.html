@@ -227,6 +227,10 @@
   .price{font-family:"Frank Ruhl Libre",serif;font-weight:900;font-size:3.6rem;color:var(--brown-deep);line-height:1}
   .price small{font-size:1.4rem}
   .price-sub{color:var(--muted);margin:8px 0 22px}
+  .sale-tag{align-self:center;background:#c0392b;color:#fff;font-weight:700;font-size:.95rem;padding:5px 18px;border-radius:99px;margin-bottom:10px}
+  .old-price{color:var(--muted);font-size:1.15rem;margin-bottom:4px}
+  .old-price s,.hero-card s.was{text-decoration-color:#c0392b;text-decoration-thickness:2px}
+  .hero-card s.was{opacity:.7}
   .offer-price .btn{width:100%}
   .offer-price .btn + .btn{margin-top:10px}
 
@@ -377,7 +381,7 @@
       <ul>
         <li>8 מפגשים, אחד בשבוע</li>
         <li>3 שעות בכל מפגש</li>
-        <li>770 ₪ לכל המקבץ</li>
+        <li><span><s class="was">1,200 ₪</s> <b>770 ₪</b> לכל המקבץ, במחיר מבצע</span></li>
       </ul>
       <a class="btn btn-gold" data-wa="hero-card" href="#signup"><svg><use href="#i-wa"/></svg>להרשמה בוואטסאפ</a>
       <div class="seats">הקבוצה קטנה, ומספר המקומות מוגבל</div>
@@ -523,8 +527,10 @@
         <li><svg><use href="#i-check"/></svg><span>הנחיה של <b>נורית כליל החורש</b></span></li>
       </ul>
       <div class="offer-price">
+        <div class="sale-tag">מחיר מבצע</div>
+        <div class="old-price">במקום <s>1,200 ₪</s></div>
         <div class="price">770 <small>₪</small></div>
-        <div class="price-sub">לכל 8 המפגשים · כ 96 ₪ למפגש</div>
+        <div class="price-sub">לכל 8 המפגשים · חיסכון של 430 ₪</div>
         <a class="btn btn-primary" data-wa="offer" href="#signup"><svg><use href="#i-wa"/></svg>שמרי לי מקום</a>
         <a class="btn btn-ghost" href="tel:+972586766904"><svg><use href="#i-phone"/></svg>להתקשר לשני</a>
       </div>
@@ -560,7 +566,7 @@
       </details>
       <details>
         <summary>כמה זה עולה?</summary>
-        <p>עלות ההשתתפות היא 770 ₪ לכל 8 המפגשים.</p>
+        <p>המחיר הרגיל הוא 1,200 ₪, ועכשיו במחיר מבצע: 770 ₪ לכל 8 המפגשים.</p>
       </details>
       <details>
         <summary>למי המפגשים מיועדים?</summary>
