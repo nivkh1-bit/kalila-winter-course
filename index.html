@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>לקראת החורף הקרב ובא | 8 מפגשים לנשים עם נורית כליל החורש | כלילא</title>
-<meta name="description" content="מקבץ של 8 מפגשים ללימוד תורת גוף, נפש, רוח ונשמה לשיפור הבריאות. לקבוצה קטנה של נשים, בימי רביעי 09:00 עד 12:00 בגבעה הצרפתית, ירושלים. מתחילים ב 21.10.">
+<meta name="description" content="מקבץ של 8 מפגשים ללימוד תורת גוף, נפש, רוח ונשמה לשיפור הבריאות, לקבוצה קטנה של נשים. שתי קבוצות לבחירה: ימי שני בערב בעמיחי (מ 19.10) או ימי רביעי בבוקר בגבעה הצרפתית, ירושלים (מ 21.10).">
 <!-- תצוגה מקדימה כשמשתפים את הקישור בוואטסאפ ובפייסבוק -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
 <meta property="og:title" content="לקראת החורף הקרב ובא: 8 מפגשי גוף, נפש, רוח ונשמה לנשים">
-<meta property="og:description" content="עם נורית כליל החורש, מתחם כלילא לריפוי טבעי. ימי רביעי בבוקר, הגבעה הצרפתית, ירושלים. מתחילים ב 21.10. קבוצה קטנה, מספר המקומות מוגבל.">
+<meta property="og:description" content="עם נורית כליל החורש, מתחם כלילא לריפוי טבעי. שתי קבוצות לבחירה: ימי שני בערב בעמיחי, או ימי רביעי בבוקר בירושלים. קבוצה קטנה, מספר המקומות מוגבל.">
 <meta property="og:image" content="https://nivkh1-bit.github.io/kalila-winter-course/nurit.jpg">
 <meta property="og:url" content="https://nivkh1-bit.github.io/kalila-winter-course/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,7 +121,13 @@
   }
   .hero-card h3{color:var(--gold-light);font-size:1.3rem;margin-bottom:6px}
   .hero-card .start{font-size:2rem;font-family:"Frank Ruhl Libre",serif;font-weight:900;margin-bottom:4px}
-  .hero-card .start-sub{opacity:.8;margin-bottom:22px}
+  .hero-card .start-sub{opacity:.8;margin-bottom:12px}
+  .groups{display:grid;gap:10px;margin-bottom:22px}
+  .group{background:rgba(255,255,255,.08);border:1px solid rgba(231,200,126,.25);border-radius:14px;padding:12px 16px;position:relative}
+  .group b{display:block;color:var(--gold-light);font-size:1.1rem}
+  .group span{font-size:.95rem;opacity:.9}
+  .group.soon{border-color:var(--gold-light);background:rgba(231,200,126,.14)}
+  .group[data-badge]::after{content:attr(data-badge);position:absolute;top:12px;left:12px;font-size:.75rem;font-weight:700;background:var(--wa);color:#fff;padding:2px 10px;border-radius:99px}
   .countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
   .countdown div{background:rgba(255,255,255,.08);border-radius:14px;padding:12px 6px;text-align:center}
   .countdown b{display:block;font-size:1.8rem;font-family:"Frank Ruhl Libre",serif;line-height:1.1}
@@ -178,14 +184,28 @@
   .meet .n small{display:block;font-family:"Heebo",sans-serif;font-size:.72rem;font-weight:500;color:var(--muted);margin-top:4px}
   .meet h3{font-size:1.25rem;margin-bottom:2px}
   .meet p{color:var(--muted);font-size:1rem}
-  .meet .date{text-align:center;background:var(--cream);border-radius:14px;padding:10px 16px;min-width:118px}
-  .meet .date b{display:block;font-size:1.25rem;color:var(--brown-deep)}
+  .meet .date{text-align:center;background:var(--cream);border-radius:14px;padding:12px 18px;min-width:200px;display:grid;gap:4px}
+  .meet .date b{display:block;font-size:1.05rem;color:var(--brown-deep)}
+  .meet .date .d.done{opacity:.45}
+  .meet .date .d{white-space:nowrap}
+  .meet .date .d b{display:inline}
+  .meet .date .d span{margin-inline-start:6px}
   .meet .date span{font-size:.85rem;color:var(--muted)}
   .meet.past{opacity:.55}
   .meet.past .date::after{content:"התקיים";display:block;font-size:.75rem;color:var(--olive);font-weight:700}
   .meet.next{border-right-color:var(--wa);box-shadow:0 0 0 2px rgba(31,157,85,.25),0 8px 22px rgba(58,36,20,.08)}
   .meet.next .date::after{content:"המפגש הקרוב";display:block;font-size:.75rem;color:var(--wa);font-weight:700}
-  .mid-cta{margin-top:44px}
+  .mid-cta{margin-top:70px}
+  .group-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:34px auto 0;max-width:880px;text-align:right}
+  .group-card{background:#fff;border-radius:24px;padding:28px 26px;box-shadow:var(--shadow);border-top:6px solid var(--gold);display:flex;flex-direction:column}
+  .gc-when{font-family:"Frank Ruhl Libre",serif;font-weight:900;font-size:1.7rem;color:var(--brown-deep);margin-bottom:14px}
+  .group-card ul{list-style:none;display:grid;gap:10px;margin-bottom:22px;flex:1}
+  .group-card li{display:flex;gap:10px;align-items:center}
+  .group-card li svg{width:20px;height:20px;color:var(--gold);flex-shrink:0}
+  .group-card .btn{width:100%}
+  .gc-nav{display:block;text-align:center;margin-top:12px;font-size:.95rem;color:var(--muted);text-decoration:none}
+  .gc-nav:hover{color:var(--brown)}
+  @media (max-width:760px){.group-cards{grid-template-columns:1fr}}
 
   /* המנחה */
   .about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
@@ -254,11 +274,11 @@
   .form-card > p{color:var(--muted);margin-bottom:20px;font-size:.98rem}
   .field{margin-bottom:14px}
   .field label{display:block;font-weight:500;margin-bottom:6px;font-size:.95rem}
-  .field input,.field textarea{
+  .field input,.field textarea,.field select{
     width:100%;font-family:inherit;font-size:1rem;padding:14px 16px;border-radius:12px;
     border:1.5px solid var(--sand-2);background:var(--cream);color:var(--text)
   }
-  .field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--gold);background:#fff}
   .form-card .btn{width:100%;margin-top:6px}
   .privacy{font-size:.82rem;color:var(--muted);margin-top:12px;text-align:center}
   .contact-lines{display:grid;gap:14px;margin-top:26px}
@@ -307,8 +327,8 @@
     .benefits-grid{grid-template-columns:1fr}
     .meet{grid-template-columns:54px 1fr;gap:14px;padding:18px}
     .meet .n{font-size:1.9rem}
-    .meet .date{grid-column:1 / -1;display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:right}
-    .meet .date b{font-size:1.05rem}
+    .meet .date{grid-column:1 / -1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 14px;text-align:right}
+    .meet .date b{font-size:.98rem}
     .meet.past .date::after,.meet.next .date::after{margin-inline-start:auto}
     .topbar .btn{display:none}
     .sticky-bar{display:flex}
@@ -352,14 +372,14 @@
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">לקראת החורף הקרב ובא</span>
-      <h1>8 בקרים של גוף, נפש, רוח ונשמה
+      <h1>8 מפגשים של גוף, נפש, רוח ונשמה
         <span class="accent">מקבץ מפגשים לנשים, לשיפור הבריאות</span>
       </h1>
       <p class="lead">לימוד תורת גוף, נפש, רוח ונשמה, בקבוצה קטנה ואינטימית של נשים, בהנחיית נורית כליל החורש, מטפלת ומרצה, מנהלת מתחם "כלילא" לריפוי טבעי.</p>
       <div class="chips">
-        <span class="chip"><svg><use href="#i-cal"/></svg>ימי רביעי, מ 21.10</span>
-        <span class="chip"><svg><use href="#i-clock"/></svg>09:00 עד 12:00</span>
-        <span class="chip"><svg><use href="#i-pin"/></svg>הגבעה הצרפתית, ירושלים</span>
+        <span class="chip"><svg><use href="#i-clock"/></svg>ימי שני בערב, עמיחי</span>
+        <span class="chip"><svg><use href="#i-clock"/></svg>ימי רביעי בבוקר, ירושלים</span>
+        <span class="chip"><svg><use href="#i-cal"/></svg>מתחילים ב 19.10</span>
         <span class="chip"><svg><use href="#i-users"/></svg>קבוצה קטנה של נשים</span>
       </div>
       <div class="cta-row">
@@ -370,17 +390,19 @@
     </div>
 
     <aside class="hero-card reveal" aria-label="פרטי פתיחה">
-      <h3 id="cd-title">המפגש הראשון</h3>
-      <div class="start">רביעי, 21.10</div>
-      <div class="start-sub">י' חשוון · 09:00 בבוקר</div>
+      <h3>שתי קבוצות, תוכנית אחת</h3>
+      <div class="start-sub" id="cd-title">הקבוצה הבאה נפתחת בעוד</div>
       <div class="countdown" id="countdown" aria-live="polite">
         <div><b id="cd-d">0</b><span>ימים</span></div>
         <div><b id="cd-h">0</b><span>שעות</span></div>
         <div><b id="cd-m">0</b><span>דקות</span></div>
       </div>
+      <div class="groups">
+        <div class="group" data-start="2026-10-19T19:00:00+03:00"><b>ימי שני בערב</b><span>עמיחי · 19:00 · מ 19.10</span></div>
+        <div class="group" data-start="2026-10-21T09:00:00+03:00"><b>ימי רביעי בבוקר</b><span>ירושלים · 09:00 עד 12:00 · מ 21.10</span></div>
+      </div>
       <ul>
         <li>8 מפגשים, אחד בשבוע</li>
-        <li>3 שעות בכל מפגש</li>
         <li><span><s class="was">1,200 ₪</s> <b>770 ₪</b> לכל המקבץ, במחיר מבצע</span></li>
       </ul>
       <a class="btn btn-gold" data-wa="hero-card" href="#signup"><svg><use href="#i-wa"/></svg>להרשמה בוואטסאפ</a>
@@ -409,7 +431,7 @@
   <div class="wrap center">
     <span class="eyebrow">מה תיקחי איתך</span>
     <h2 class="section-title">ידע שתוכלי להשתמש בו כל יום</h2>
-    <p class="section-lead">לא עוד הרצאה. שמונה בקרים של לימוד, חוויה והתבוננות, שבהם הגוף, הנפש, הרוח והנשמה נפגשים.</p>
+    <p class="section-lead">לא עוד הרצאה. שמונה מפגשים של לימוד, חוויה והתבוננות, שבהם הגוף, הנפש, הרוח והנשמה נפגשים.</p>
     <div class="benefits-grid" style="text-align:right">
       <div class="benefit reveal"><div class="num">⏳</div><div><h3>להכיר את שעון הגוף</h3><p>איזו פעילות מתאימה לכל שעה ביממה, ואיך לתאם איתה את סדר היום.</p></div></div>
       <div class="benefit reveal"><div class="num">☯</div><div><h3>להבין את תנועות החיים</h3><p>"רצוא ושוב": תורת היין והיאנג כבסיס לחיים מאוזנים.</p></div></div>
@@ -427,55 +449,77 @@
     <div class="center">
       <span class="eyebrow">תוכנית המפגשים</span>
       <h2 class="section-title">8 מפגשים, צעד אחר צעד</h2>
-      <p class="section-lead">כל מפגש בנוי על הקודם לו. ימי רביעי, 09:00 עד 12:00.</p>
+      <p class="section-lead">כל מפגש בנוי על הקודם לו. אותה תוכנית בשתי הקבוצות: ימי שני בערב בעמיחי, וימי רביעי בבוקר בירושלים.</p>
     </div>
 
     <div class="timeline" id="timeline">
-      <article class="meet reveal" data-date="2026-10-21">
+      <article class="meet reveal">
         <div class="n">1<small>מפגש</small></div>
         <div><h3>"לכל זמן ועת לכל חפץ"</h3><p>שעון הגוף והפעילות המתאימה לכל שעה משעות היממה</p></div>
-        <div class="date"><b>21.10</b><span>י' חשוון</span></div>
+        <div class="date"><div class="d" data-at="2026-10-19T19:00:00+03:00"><b>שני 19.10</b><span>ח' חשוון</span></div><div class="d" data-at="2026-10-21T09:00:00+03:00"><b>רביעי 21.10</b><span>י' חשוון</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-10-28">
+      <article class="meet reveal">
         <div class="n">2<small>מפגש</small></div>
         <div><h3>"חיות רצוא ושוב"</h3><p>על תנועות הפוכות בחיינו. תורת היין והיאנג כבסיס לחיים</p></div>
-        <div class="date"><b>28.10</b><span>י"ז חשוון</span></div>
+        <div class="date"><div class="d" data-at="2026-10-26T19:00:00+03:00"><b>שני 26.10</b><span>ט"ו חשוון</span></div><div class="d" data-at="2026-10-28T09:00:00+03:00"><b>רביעי 28.10</b><span>י"ז חשוון</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-11-04">
+      <article class="meet reveal">
         <div class="n">3<small>מפגש</small></div>
         <div><h3>"מבשרי אחזה אלוה" · חלק א'</h3><p>על ביטויי הנפש בגופנו</p></div>
-        <div class="date"><b>04.11</b><span>כ"ד חשוון</span></div>
+        <div class="date"><div class="d" data-at="2026-11-02T19:00:00+03:00"><b>שני 02.11</b><span>כ"ב חשוון</span></div><div class="d" data-at="2026-11-04T09:00:00+03:00"><b>רביעי 04.11</b><span>כ"ד חשוון</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-11-11">
+      <article class="meet reveal">
         <div class="n">4<small>מפגש</small></div>
         <div><h3>"מבשרי אחזה אלוה" · חלק ב'</h3><p>על ביטויי הנפש בגופנו</p></div>
-        <div class="date"><b>11.11</b><span>א' כסליו</span></div>
+        <div class="date"><div class="d" data-at="2026-11-09T19:00:00+03:00"><b>שני 09.11</b><span>כ"ט חשוון</span></div><div class="d" data-at="2026-11-11T09:00:00+03:00"><b>רביעי 11.11</b><span>א' כסליו</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-11-18">
+      <article class="meet reveal">
         <div class="n">5<small>מפגש</small></div>
         <div><h3>"נוגע לא נוגע"</h3><p>על כוח הנגיעה, הריפוי והשפעתו</p></div>
-        <div class="date"><b>18.11</b><span>ח' כסליו</span></div>
+        <div class="date"><div class="d" data-at="2026-11-16T19:00:00+03:00"><b>שני 16.11</b><span>ו' כסליו</span></div><div class="d" data-at="2026-11-18T09:00:00+03:00"><b>רביעי 18.11</b><span>ח' כסליו</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-11-25">
+      <article class="meet reveal">
         <div class="n">6<small>מפגש</small></div>
         <div><h3>"ותקח... את התוף בידה"</h3><p>על תיפופים מרפאים ושיטת FFT</p></div>
-        <div class="date"><b>25.11</b><span>ט"ו כסליו</span></div>
+        <div class="date"><div class="d" data-at="2026-11-23T19:00:00+03:00"><b>שני 23.11</b><span>י"ג כסליו</span></div><div class="d" data-at="2026-11-25T09:00:00+03:00"><b>רביעי 25.11</b><span>ט"ו כסליו</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-12-02">
+      <article class="meet reveal">
         <div class="n">7<small>מפגש</small></div>
         <div><h3>"קרבת אלוקים לי טוב"</h3><p>חיבורים בין גוף, נפש, רוח ונשמה</p></div>
-        <div class="date"><b>02.12</b><span>כ"ב כסליו</span></div>
+        <div class="date"><div class="d" data-at="2026-11-30T19:00:00+03:00"><b>שני 30.11</b><span>כ' כסליו</span></div><div class="d" data-at="2026-12-02T09:00:00+03:00"><b>רביעי 02.12</b><span>כ"ב כסליו</span></div></div>
       </article>
-      <article class="meet reveal" data-date="2026-12-09">
+      <article class="meet reveal">
         <div class="n">8<small>מפגש</small></div>
         <div><h3>"סוף מעשה במחשבה תחילה"</h3><p>מקומה וכוחה של המחשבה בחולי ורפואה</p></div>
-        <div class="date"><b>09.12</b><span>כ"ט כסליו</span></div>
+        <div class="date"><div class="d" data-at="2026-12-07T19:00:00+03:00"><b>שני 07.12</b><span>כ"ז כסליו</span></div><div class="d" data-at="2026-12-09T09:00:00+03:00"><b>רביעי 09.12</b><span>כ"ט כסליו</span></div></div>
       </article>
     </div>
 
-    <div class="center mid-cta">
-      <div class="cta-row">
-        <a class="btn btn-primary" data-wa="program" href="#signup"><svg><use href="#i-wa"/></svg>רוצה להצטרף לקבוצה</a>
+    <div class="center mid-cta" id="groups">
+      <span class="eyebrow">שתי קבוצות לבחירה</span>
+      <h2 class="section-title">בחרי את הזמן שמתאים לך</h2>
+      <p class="section-lead">אותה תוכנית, אותה מנחה, אותו מחיר. רק היום, השעה והמקום שונים.</p>
+      <div class="group-cards">
+        <div class="group-card reveal">
+          <div class="gc-when">ימי שני בערב</div>
+          <ul>
+            <li><svg><use href="#i-clock"/></svg>בשעה 19:00</li>
+            <li><svg><use href="#i-cal"/></svg>8 מפגשים, מ 19.10 עד 07.12</li>
+            <li><svg><use href="#i-pin"/></svg>עמיחי, אצל משפחת הילל</li>
+          </ul>
+          <a class="btn btn-primary" data-wa="group-mon" data-group="ימי שני בערב בעמיחי" href="#signup"><svg><use href="#i-wa"/></svg>להרשמה לקבוצת שני</a>
+          <a class="gc-nav" href="https://waze.com/ul?q=%D7%A2%D7%9E%D7%99%D7%97%D7%99&navigate=yes" target="_blank" rel="noopener">📍 ניווט לעמיחי בוויז</a>
+        </div>
+        <div class="group-card reveal">
+          <div class="gc-when">ימי רביעי בבוקר</div>
+          <ul>
+            <li><svg><use href="#i-clock"/></svg>09:00 עד 12:00</li>
+            <li><svg><use href="#i-cal"/></svg>8 מפגשים, מ 21.10 עד 09.12</li>
+            <li><svg><use href="#i-pin"/></svg>מבוא הררי 47, הגבעה הצרפתית, ירושלים</li>
+          </ul>
+          <a class="btn btn-primary" data-wa="group-wed" data-group="ימי רביעי בבוקר בירושלים" href="#signup"><svg><use href="#i-wa"/></svg>להרשמה לקבוצת רביעי</a>
+          <a class="gc-nav" href="https://waze.com/ul?q=%D7%9E%D7%91%D7%95%D7%90%20%D7%94%D7%A8%D7%A8%D7%99%2047%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener">📍 ניווט למבוא הררי 47 בוויז</a>
+        </div>
       </div>
       <p class="cta-note">שאלה על אחד המפגשים? שני תשמח לענות</p>
     </div>
@@ -507,7 +551,7 @@
       <div class="fit-item reveal"><div class="ico">🌿</div><h3>בריאות טבעית</h3><p>את רוצה להבין את הגוף ולשפר את הבריאות בדרך טבעית</p></div>
       <div class="fit-item reveal"><div class="ico">💛</div><h3>גוף ונפש</h3><p>את סקרנית לקשר שבין מה שאת מרגישה למה שהגוף שלך מרגיש</p></div>
       <div class="fit-item reveal"><div class="ico">👭</div><h3>קבוצת נשים</h3><p>את אוהבת ללמוד במקום חם, קטן ואינטימי, עם נשים אחרות</p></div>
-      <div class="fit-item reveal"><div class="ico">☀️</div><h3>בוקר לעצמך</h3><p>בא לך בוקר אחד בשבוע שהוא רק שלך</p></div>
+      <div class="fit-item reveal"><div class="ico">☀️</div><h3>זמן לעצמך</h3><p>בא לך בוקר או ערב אחד בשבוע שהוא רק שלך</p></div>
     </div>
   </div>
 </section>
@@ -520,10 +564,10 @@
     <p class="section-lead">הכל במקום אחד, כדי שיהיה לך קל להחליט.</p>
     <div class="offer-box" style="text-align:right">
       <ul class="offer-list">
-        <li><svg><use href="#i-check"/></svg><span><b>8 מפגשים</b> של 3 שעות, 24 שעות לימוד וחוויה</span></li>
-        <li><svg><use href="#i-check"/></svg><span><b>ימי רביעי</b>, 09:00 עד 12:00, מ 21.10 עד 09.12</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>8 מפגשים</b> של לימוד וחוויה, אותה תוכנית בשתי הקבוצות</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>ימי שני בערב</b>, 19:00, מ 19.10 עד 07.12, בעמיחי, אצל משפחת הילל</span></li>
         <li><svg><use href="#i-check"/></svg><span><b>קבוצה קטנה</b> של נשים בלבד</span></li>
-        <li><svg><use href="#i-check"/></svg><span><b>מבוא הררי 47</b>, הגבעה הצרפתית, ירושלים</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>או ימי רביעי בבוקר</b>, 09:00 עד 12:00, מ 21.10 עד 09.12, מבוא הררי 47, הגבעה הצרפתית, ירושלים</span></li>
         <li><svg><use href="#i-check"/></svg><span>הנחיה של <b>נורית כליל החורש</b></span></li>
       </ul>
       <div class="offer-price">
@@ -562,7 +606,11 @@
     <div class="faq-list">
       <details>
         <summary>מתי ואיפה המפגשים?</summary>
-        <p>בימי רביעי בבוקר, 09:00 עד 12:00, מ 21.10 ועד 09.12, ברחוב מבוא הררי 47, הגבעה הצרפתית, ירושלים.</p>
+        <p>יש שתי קבוצות לבחירה. ימי שני בערב בשעה 19:00, מ 19.10 ועד 07.12, בעמיחי אצל משפחת הילל. או ימי רביעי בבוקר, 09:00 עד 12:00, מ 21.10 ועד 09.12, ברחוב מבוא הררי 47, הגבעה הצרפתית, ירושלים.</p>
+      </details>
+      <details>
+        <summary>מה ההבדל בין שתי הקבוצות?</summary>
+        <p>רק היום, השעה והמקום. התוכנית, המנחה והמחיר זהים בשתיהן. בוחרים את מה שנוח לך.</p>
       </details>
       <details>
         <summary>כמה זה עולה?</summary>
@@ -594,7 +642,8 @@
       <div class="contact-lines">
         <a class="contact-line" data-wa="contact" href="#"><span class="ico" style="color:var(--wa)"><svg width="24" height="24"><use href="#i-wa"/></svg></span><span><b>וואטסאפ לשני</b><span>058-6766904</span></span></a>
         <a class="contact-line" href="tel:+972586766904"><span class="ico">📞</span><span><b>להתקשר לשני</b><span>058-6766904</span></span></a>
-        <a class="contact-line" href="https://waze.com/ul?q=%D7%9E%D7%91%D7%95%D7%90%20%D7%94%D7%A8%D7%A8%D7%99%2047%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener"><span class="ico">📍</span><span><b>ניווט בוויז</b><span>מבוא הררי 47, הגבעה הצרפתית, ירושלים</span></span></a>
+        <a class="contact-line" href="https://waze.com/ul?q=%D7%A2%D7%9E%D7%99%D7%97%D7%99&navigate=yes" target="_blank" rel="noopener"><span class="ico">📍</span><span><b>קבוצת שני: ניווט בוויז</b><span>עמיחי, אצל משפחת הילל</span></span></a>
+        <a class="contact-line" href="https://waze.com/ul?q=%D7%9E%D7%91%D7%95%D7%90%20%D7%94%D7%A8%D7%A8%D7%99%2047%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener"><span class="ico">📍</span><span><b>קבוצת רביעי: ניווט בוויז</b><span>מבוא הררי 47, הגבעה הצרפתית, ירושלים</span></span></a>
       </div>
     </div>
 
@@ -608,6 +657,14 @@
       <div class="field">
         <label for="f-phone">טלפון</label>
         <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="05X-XXXXXXX">
+      </div>
+      <div class="field">
+        <label for="f-group">לאיזו קבוצה?</label>
+        <select id="f-group" name="group">
+          <option value="ימי שני בערב בעמיחי">ימי שני בערב, עמיחי (מ 19.10)</option>
+          <option value="ימי רביעי בבוקר בירושלים">ימי רביעי בבוקר, ירושלים (מ 21.10)</option>
+          <option value="עוד לא החלטתי">עוד לא החלטתי</option>
+        </select>
       </div>
       <div class="field">
         <label for="f-note">שאלה או הערה (לא חובה)</label>
@@ -624,7 +681,8 @@
 <footer>
   <div class="wrap">
     <p><b>כְּלִילָא</b> · מתחם לריפוי טבעי · נורית כליל החורש</p>
-    <p>מבוא הררי 47, הגבעה הצרפתית, ירושלים · לפרטים והרשמה: שני, <a href="tel:+972586766904">058-6766904</a></p>
+    <p>ימי שני בערב: עמיחי, אצל משפחת הילל · ימי רביעי בבוקר: מבוא הררי 47, הגבעה הצרפתית, ירושלים</p>
+    <p>לפרטים והרשמה: שני, <a href="tel:+972586766904">058-6766904</a></p>
   </div>
 </footer>
 
@@ -643,7 +701,9 @@
 
   // כל כפתורי ההרשמה פותחים וואטסאפ עם הודעה מוכנה
   document.querySelectorAll("[data-wa]").forEach(function(a){
-    a.href = waLink(BASE_MSG);
+    a.href = waLink(a.dataset.group
+      ? 'היי שני, הגעתי מהאתר. אשמח להירשם למפגשי "לקראת החורף הקרב ובא" עם נורית כליל החורש, לקבוצה של ' + a.dataset.group + ' 🌿'
+      : BASE_MSG);
     a.target = "_blank";
     a.rel = "noopener";
     a.addEventListener("click", function(){ track("wa_click", a.dataset.wa); });
@@ -653,10 +713,10 @@
   var form = document.getElementById("lead-form");
   form.addEventListener("submit", function(e){
     e.preventDefault();
-    var name = form.name.value.trim(), phone = form.phone.value.trim(), note = form.note.value.trim();
+    var name = form.name.value.trim(), phone = form.phone.value.trim(), note = form.note.value.trim(), group = form.group.value;
     if(!name){ form.name.focus(); form.name.style.borderColor="#c0392b"; return; }
     if(!phone){ form.phone.focus(); form.phone.style.borderColor="#c0392b"; return; }
-    var msg = 'היי שני, אשמח להירשם למפגשי "לקראת החורף הקרב ובא" עם נורית כליל החורש 🌿\n\nשם: ' + name + '\nטלפון: ' + phone + (note ? '\nהערה: ' + note : '');
+    var msg = 'היי שני, אשמח להירשם למפגשי "לקראת החורף הקרב ובא" עם נורית כליל החורש 🌿\n\nשם: ' + name + '\nטלפון: ' + phone + '\nקבוצה: ' + group + (note ? '\nהערה: ' + note : '');
     track("form_submit", "signup");
     window.open(waLink(msg), "_blank");
   });
@@ -667,28 +727,37 @@
     if(window.gtag) gtag("event", action, {event_label: label});
   }
 
-  // ספירה לאחור למפגש הראשון
-  var start = new Date("2026-10-21T09:00:00+03:00");
-  var cd = document.getElementById("countdown");
+  // ספירה לאחור לקבוצה הבאה שנפתחת
+  var groups = Array.prototype.slice.call(document.querySelectorAll(".group"));
+  var cd = document.getElementById("countdown"), cdTitle = document.getElementById("cd-title");
   function tick(){
-    var diff = start - new Date();
-    if(diff <= 0){
-      cd.style.display = "none";
-      document.getElementById("cd-title").textContent = "הקבוצה כבר יצאה לדרך";
-      return;
-    }
+    var now = new Date(), next = null;
+    groups.forEach(function(g){
+      var st = new Date(g.dataset.start);
+      g.classList.remove("soon"); g.removeAttribute("data-badge");
+      if(st > now && !next){ next = g; }
+      else if(st <= now){ g.setAttribute("data-badge", "יצאה לדרך"); }
+    });
+    if(!next){ cd.style.display = "none"; cdTitle.textContent = "שתי הקבוצות כבר יצאו לדרך"; return; }
+    next.classList.add("soon");
+    var diff = new Date(next.dataset.start) - now;
     var d = Math.floor(diff/864e5), h = Math.floor(diff%864e5/36e5), m = Math.floor(diff%36e5/6e4);
+    next.setAttribute("data-badge", d === 0 ? "נפתחת היום" : d === 1 ? "נפתחת מחר" : "הבאה בתור");
+    cdTitle.textContent = "קבוצת " + next.querySelector("b").textContent + " נפתחת בעוד";
     document.getElementById("cd-d").textContent = d;
     document.getElementById("cd-h").textContent = h;
     document.getElementById("cd-m").textContent = m;
   }
   tick(); setInterval(tick, 30000);
 
-  // סימון מפגשים שהתקיימו והמפגש הקרוב
+  // סימון מפגשים שהתקיימו והמפגש הקרוב (מפגש נגמר 3 שעות אחרי תחילתו)
   var now = new Date(), nextMarked = false;
   document.querySelectorAll(".meet").forEach(function(el){
-    var end = new Date(el.dataset.date + "T12:00:00+03:00");
-    if(end < now){ el.classList.add("past"); }
+    var allDone = true;
+    el.querySelectorAll(".d").forEach(function(d){
+      if(new Date(d.dataset.at).getTime() + 3*36e5 < now){ d.classList.add("done"); } else { allDone = false; }
+    });
+    if(allDone){ el.classList.add("past"); }
     else if(!nextMarked){ el.classList.add("next"); nextMarked = true; }
   });
 
